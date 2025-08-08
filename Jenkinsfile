@@ -6,15 +6,15 @@ pipeline {
         githubPush()
 
          // Poll GitHub every 1 minute for changes
-        pollSCM('* * * * *')
+        //pollSCM('* * * * *')
     }
    
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Pradheep01/test-traning.git'
-            }
+        // stage('Checkout') {
+        //     steps {
+        //         git branch: 'main', url: 'https://github.com/Pradheep01/test-traning.git'
+        //     }
         }
 stage('Build') {
             steps {
@@ -24,12 +24,12 @@ stage('Build') {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-                // Example test command
+        // stage('Test') {
+        //     steps {
+        //         echo 'Running tests...'
+        //         // Example test command
 
-            }
+        //     }
         }
 stage('Deploy') {
             steps {
