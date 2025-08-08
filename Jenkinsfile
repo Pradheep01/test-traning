@@ -4,7 +4,11 @@ pipeline {
     triggers {
         // Trigger build when a push event is received from GitHub webhook
         githubPush()
+
+         // Poll GitHub every 1 minute for changes
+        pollSCM('* * * * *')
     }
+   
 
     stages {
         stage('Checkout') {
