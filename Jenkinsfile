@@ -38,10 +38,10 @@ stage('Deploy') {
 
     post {
         success {
-            echo '✅ Build and deployment completed.'
+            echo ' Build and deployment completed.'
         }
         failure {
-            echo '❌ Build or deployment failed.'
+            echo ' Build or deployment failed.'
         }
     }
 }
