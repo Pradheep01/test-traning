@@ -20,7 +20,7 @@ stage('Build') {
             steps {
                 echo 'Running build...'
                 // Example build command
-              //  sh 'npm install'
+
             }
         }
 
@@ -28,14 +28,14 @@ stage('Build') {
             steps {
                 echo 'Running tests...'
                 // Example test command
-              //  sh 'npm test'
+
             }
         }
 stage('Deploy') {
             steps {
                 echo 'Deploying...'
                 // Example deploy command
-             //   sh './deploy.sh'
+        
             }
         }
     }
